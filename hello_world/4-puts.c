@@ -1,4 +1,4 @@
-#includ.stdio.h
+#include <stdio.h>
 /**
  *main - entry point
  *Description: the () are empty because i don't have any value to work with
