@@ -5,7 +5,7 @@
  *with puts i make a new line at the and of my prints
  *return tell me with a 0 if the code work
  */
-int main(viod)
+int main(void)
 {
   puts("\"Programming is like building a multilingual puzzle");
   return (0);
