@@ -4,10 +4,10 @@
 /* more headers goes there */
 
 /**
- *main-the main fontion
- *Description:
- *Return: tell me with a 0 if the code work
-*/
+ *main -  main fontion
+ *Description: tell if n is 0,+ or -
+ *Return: tell if the code work or not
+ */
 int main(void)
 {
 	int n;
@@ -16,16 +16,16 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if (n > 0)
-	{
-	printf("%d, is positive\n", n);
-	}
-	else if (n == 0)
-	{
-	printf("%d, is zero\n", n);
-	}
+	  {
+	    printf("%d, is positive.", n);
+	  }
 	else if (n < 0)
-	{
-	printf("%d, is negative\n", n);
-	}
-	Return(0);
+	  {
+	    printf("%d, is negative", n);
+	  }
+	else
+	  {
+	    printf("%d, is zero", n);
+	  }
+	return (0);
 }
