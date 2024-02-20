@@ -3,7 +3,11 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ *main-the main fontion
+ *Description:
+ *Return: tell me with a 0 if the code work
+*/
 int main(void)
 {
 	int n;
