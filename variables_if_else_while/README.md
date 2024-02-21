@@ -15,4 +15,4 @@ Print all the letters except q and e (for this one it's condition, si pas e et q
 
 6.
 
-7.
+7. Write a program that prints the lowercase alphabet in reverse, followed by a new line. (here to reverse it it's more simpel than it's look take the one in the 6 and add nothing, look in the for.
