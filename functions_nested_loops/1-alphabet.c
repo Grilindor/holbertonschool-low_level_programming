@@ -2,8 +2,10 @@
 #include <stdlib.h>
 #include "main.h"
 /**
-*main - main fonction print the alphabet
-*C: it's fonction hypothetique
+*print_alphabet - print_alphabet fonction print the alphabet
+*
+*Function: print the alphabet
+*
 *Return: tell me with a 0 if the code work
 */
 void print_alphabet(void)
