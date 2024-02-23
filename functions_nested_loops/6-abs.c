@@ -6,12 +6,8 @@
 *@int: more shit
 *Return: tell me with a 0 if the code work
 */
-int _abs(int)
+int _abs(int r)
 {
-	int r;
-
-	abs(r);
-	_putchar(r);
-	_putchar('\n');
-	return (0);
+	r = abs(r);
+	return (r);
 }
