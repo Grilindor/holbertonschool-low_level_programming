@@ -2,14 +2,15 @@
 #include <stdlib.h>
 #include "main.h"
 /**
-*print_sign - main fonction print the alphabet
-*@n: it's fonction hypothetique
-*Return: tell me with a 0 if the code work
+*add - main fonction print the alphabet
+*@r: it's variable
+*@i: it's variable
+*Return: return the t
 */
 int add(int r, int i)
 {
 	int t;
-	
+
 	t = r + i;
-	return(t);
+	return (t);
 }
