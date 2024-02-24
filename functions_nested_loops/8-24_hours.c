@@ -23,7 +23,7 @@ void jack_bauer(void)
 				{
 					if (h2 >= '4')
 						break;
-					_Putchar(h1);
+					_putchar(h1);
 					_putchar(h2);
 					_putchar(':');
 					_putchar(m1);
