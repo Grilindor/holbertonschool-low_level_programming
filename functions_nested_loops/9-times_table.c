@@ -20,7 +20,7 @@ void times_table(void)
 			cal = a * b;
 			_putchar(44);
 			_putchar(32);
-			if (cal <= '9')
+			if (cal <= 9)
 			{
 				_putchar(32);
 				_putchar(cal + 48);
