@@ -23,7 +23,7 @@ void times_table(void)
 			if (cal <= 9)
 			{
 				_putchar(' ');
-				_putchar(op + '0');
+				_putchar(cal + '0');
 			}
 			else
 			{
