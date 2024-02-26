@@ -2,6 +2,7 @@
 #include "main.h"
 
 /**
+ *more_numbers - main fontion to print 0-14 X10
  *
  */
 
@@ -12,7 +13,12 @@ void more_numbers(void)
 	while (i <= 10)
 	{
 		for (y = 0; y <= 14; y++)
-			_putchar(y);
+		{
+			if (y > 9)
+				_putchar('0' + (y / 10 % 10));
+			if (y <= 14)
+				_putchar('0' + y % 10);
+		}
 		i++;
 		_putchar('\n');
 	}
