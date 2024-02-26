@@ -11,7 +11,7 @@ void print_most_numbers(void)
 {
 	int chif = 0;
 
-	while(chif <= 9)
+	while (chif <= 9)
 	{
 		if (chif != 2 && chif != 4)
 			_putchar('0' + chif);
