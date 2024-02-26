@@ -10,7 +10,7 @@ void more_numbers(void)
 {
 	int i, y;
 
-	while (i <= 10)
+	for (i = 0; i <= 10; i++)
 	{
 		for (y = 0; y <= 14; y++)
 		{
@@ -19,7 +19,6 @@ void more_numbers(void)
 			if (y <= 14)
 				_putchar('0' + y % 10);
 		}
-		i++;
 		_putchar('\n');
 	}
 }
