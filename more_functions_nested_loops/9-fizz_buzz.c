@@ -23,6 +23,7 @@ int main(void)
 				printf("Buzz\n");
 			else
 				printf("Buzz ");
+		}
 		else
 			printf("%d", n);
 
