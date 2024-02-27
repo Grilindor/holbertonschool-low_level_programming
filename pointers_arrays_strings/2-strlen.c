@@ -12,8 +12,12 @@
 
 int _strlen(char *s)
 {
-	int t;
+	int compt;
 
-	t = strlen(s);
-	return (t);
+	while (*s != '\0')
+	{
+		compt++;
+		s++;
+	}
+	return (compt);
 }
