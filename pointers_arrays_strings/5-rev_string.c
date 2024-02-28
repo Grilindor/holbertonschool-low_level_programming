@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include "2-strlen.c"
 /**
  *_strlen - main fontion to return the max len of s
  *@s: it's a var
