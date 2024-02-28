@@ -3,12 +3,12 @@
 #include <string.h>
 #include "2-strlen.c"
 /**
- *_puts - main fontion it's like printf
- *@str: what we print
+ *print_rev - main fontion it's like printf in revers
+ *@s: what we print
  *no return
  */
 
- void print_rev(char *s)
+void print_rev(char *s)
 {
 	int i;
 
