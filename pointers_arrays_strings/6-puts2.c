@@ -3,8 +3,8 @@
 #include "main.h"
 #include "2-strlen.c"
 /**
-*print_alphabet_x10 - main fonction print the alphabet
-*C: it's fonction hypothetique
+*puts2 - main fonction print the paire
+*@str: it's fonction hypothetique
 *Return: tell me with a 0 if the code work
 */
 
