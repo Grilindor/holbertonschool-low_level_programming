@@ -4,7 +4,7 @@
 #include <string.h>
 #include "2-strlen.c"
 /**
- *_strlen - main fontion to return the max len of s
+ *rev_string - main fontion to return the max len of s
  *@s: it's a var
  *Return: look up
  *
@@ -12,11 +12,16 @@
 
 void rev_string(char *s)
 {
-	int i;
+	int i, j;
 
-	for (i = _strlen(s) - 1; i >= 0; i--)
+	j = strlen(s) - 1;
+
+	for (i = 0; i < j; i++)
 	{
-		_putchar(s[i]);
+		char c = s[i];
+
+		s[i] = s[j];
+		s[j] = c;
+		j--;
 	}
-	_putchar('\n');
 }
