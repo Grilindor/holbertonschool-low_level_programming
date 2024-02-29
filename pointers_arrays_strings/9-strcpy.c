@@ -2,9 +2,11 @@
 #include "main.h"
 #include "2-strlen.c"
 /**
- *puts_half - main fontion it's like printf
- *@str: what we print in last half
- *no return
+ *_strcpy - main fontion it's like printf
+ *@dest: destination
+ *@src:source
+ *
+ *Return: renvoie le dest
  */
 
 char *_strcpy(char *dest, char *src)
