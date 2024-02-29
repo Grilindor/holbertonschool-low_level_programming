@@ -3,8 +3,9 @@
 #include "2-strlen.c"
 
 /**
- *puts_half - main fontion it's like printf
- *@str: what we print in last half
+ *print_array - main fontion it's like printf
+ *@a: is the array
+ *@n: is the number of elements of the array to be printed
  *no return
  */
 
@@ -12,7 +13,7 @@ void print_array(int *a, int n)
 {
 	int i;
 
-	if (n <=0)
+	if (n <= 0)
 		printf("\n");
 	else
 	{
