@@ -4,10 +4,11 @@
 #include "2-strlen.c"
 
 /**
- *_strlen - main fontion to return the max len of s
- *@s: it's a var
- *Return: look up
+ **_strcat - main fontion it's like printf
+ *@dest: destination
+ *@src: source
  *
+ *Return: renvoie le dest
  */
 char *_strcat(char *dest, char *src)
 {
@@ -19,5 +20,5 @@ char *_strcat(char *dest, char *src)
 		dest[dest_len + i] = src[i];
 	dest[dest_len + i] = '\0';
 
-	return dest;
+	return (dest);
 }
