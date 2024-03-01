@@ -2,10 +2,10 @@
 #include "main.h"
 #include "2-strlen.c"
 /**
- *_strcpy - main fontion it's like printf
+ *_strncpy - main fontion it's like printf
  *@dest: destination
  *@src:source
- *
+ *@n: la taille
  *Return: renvoie le dest
  */
 
@@ -18,5 +18,5 @@ char *_strncpy(char *dest, char *src, int n)
 	for ( ; i < n ; i++)
 		dest[i] = '\0';
 
-	return dest;
+	return (dest);
 }
