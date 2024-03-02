@@ -4,19 +4,29 @@
 #include "2-strlen.c"
 
 /**
- **_strcat - main fontion it's like printf
- *@dest: destination
- *@src: source
+ **reverse_array - main fontion it's like printf
+ *@a: l'array
+ *@n: the long in a
  *
- *Return: renvoie le dest
+ *no return
  */
 
 void reverse_array(int *a, int n)
 {
-	int c, b;
+	int i;
 
-	for (c = 0; c != '\0'; c++)
-		_putchar(a[c]);
-	for (b = n; b != 0; b--)
-		_putchar(a[b]);
+	for (i = 0; i < n; i++)
+	{
+		int save;
+
+		save = a[i];
+		a[i] = a[n - 1];
+		a[n - 1] = save;
+		/**
+		 *si l'on met a[n - 1] cela ferat avec la
+		 *decrementation (n--) n-2, n-3 ect
+		 *ce qui enregitrera l'aray a a l'enver
+		 */
+		n--;
+	}
 }
