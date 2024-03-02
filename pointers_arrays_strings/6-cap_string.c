@@ -16,6 +16,10 @@ char *cap_string(char *str)
 
 	for (i = 0; i <= _strlen(str); i++)
 	{
+		if (i == 0)
+		{
+			str[i] = str[i] - 32;
+		}
 		if (str[i] == 9 || str[i] == 32 || str[i] == '\n' || str[i] == 46)
 		{
 			i++;
