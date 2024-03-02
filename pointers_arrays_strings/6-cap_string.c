@@ -19,6 +19,7 @@ char *cap_string(char *str)
 		if (i == 0)
 		{
 			str[i] = str[i] - 32;
+			continue;
 		}
 		if (str[i] == 9 || str[i] == 32 || str[i] == '\n' || str[i] == 46)
 		{
