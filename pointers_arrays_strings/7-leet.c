@@ -3,7 +3,7 @@
 #include <string.h>
 #include "2-strlen.c"
 /**
- *string_toupper - main fontion it's like printf in revers
+ *leet - main fontion it's like printf in revers
  *@str: the array str we change
  *Return: of char str
  */
