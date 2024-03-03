@@ -12,13 +12,19 @@ char *leet(char *str)
 {
 	int upper_case[] = {65, 69, 79, 84, 76};
 	int lower_case[] = {97, 101, 111, 116, 108};
-	int relace[] = {52, 51, 48, 55, 49};
-	*r = *str;
-	int i;
+	int replace[] = {52, 51, 48, 55, 49};
+	int i, compt;
 
-	for (i = 0; i <= _strlen(str); i++)
+	for (i = 0; *(str + i) != '\0'; i++)
 	{
-		
+		for (compt = 0; compt < 5; compt++)
+		{
+			if (*(str + i) == upper_case[compt] || *(str + i) == lower_case[compt])
+			{
+				*(str + i) = replace[i];
+				break;
+			}
+		}
 	}
-	return (r);
+	return (str);
 }
