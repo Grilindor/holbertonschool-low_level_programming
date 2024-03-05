@@ -3,10 +3,10 @@
 #include <string.h>
 #include "2-strchr.c"
 /**
- *_strstr - main fontion it's like printf in revers
+ *_strstr - main fontion that locates a substring
  *@haystack: it's first array
- *@needle: is what is accepted and be compt
- *Return: return the total of byte
+ *@needle: is the word we seek
+ *Return: return the word or the string
  */
 
 char *_strstr(char *haystack, char *needle)
