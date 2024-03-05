@@ -1,19 +1,24 @@
 #include <stdio.h>
 #include "main.h"
 #include <string.h>
-#include "2-strlen.c"
+#include "2-strchr.c"
 /**
- *leet - main fontion it's like printf in revers
- *@str: the array str we change
- *Return: of char str
+ *_strspn - main fontion it's like printf in revers
+ *@s: it's first array
+ *@accept: is what is accepted and be compt
+ *Return: return the total of byte
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, cont = 0;
+	int i, count = 0;
 
-	for (i = O; _strchr(*s, *accept) < '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		
+		if (_strchr(accept, s[i]) != NULL)
+			count++;
+		else
+			break;
 	}
+	return (count);
 }
