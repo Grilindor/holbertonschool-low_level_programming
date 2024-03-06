@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 #include <string.h>
-#include "2-strchr.c"
+
 /**
  *factorial - main fontion that returns the factorial of a given number
  *@n: it's the numbers
