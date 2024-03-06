@@ -3,10 +3,10 @@
 #include <string.h>
 #include "2-strchr.c"
 /**
- *_strspn - main fontion it's like printf in revers
- *@s: it's first array
- *@accept: is what is accepted and be compt
- *Return: return the total of byte
+ *factorial - main fontion that returns the factorial of a given number
+ *@n: it's the numbers
+ *
+ *Return: return
  */
 
 int factorial(int n)
@@ -16,5 +16,5 @@ int factorial(int n)
 	else if (n == 0)
 		return (1);
 	else
-		return (n * factorial(n -1));
+		return (n * factorial(n - 1));
 }
