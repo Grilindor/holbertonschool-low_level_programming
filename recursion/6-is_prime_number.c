@@ -3,35 +3,31 @@
 #include <string.h>
 
 /**
- *_pow_recursion - main fontion check for the squar of n
- *@n: it's the numbers
- *@y: the initial of n (sere de reference) fonction 1 pour la fonction et
+ *_prime_check - main fontion check if n is primal number
+ *@n: it's the original number
+ *@y: it's the increment
  * l'autre pour aider la fontion
  *_sqrt_recursion - fonction return n
  *Return: return
  */
 
-int _pow_recursion(int n, int y)
+int _prime_check(int y, int n)
 {
-	if (n * n == y)
-		return (n);
-	else if (n * n > y)
-		return (-1);
-	return (_pow_recursion(n + 1, y));
+	if (y * y > n)
+		return (1);
+	else if (n % 2 == 0)
+		return (1);
+	else if (y % n == 0)
+		return (0);
+	return (_prime_check(y + 1, n));
 }
 /**
- *_sqrt_recursion - fonction return n
+ *is_prime_number - fonction return the value of n ans is increment
  *@n: int
  *Return: return
  **/
 
 int is_prime_number(int n)
 {
-	if (n < 0)
-		return (-1);
-	if (n == 0)
-		return (0);
-	if (n == 1)
-		return (1);
-	return (_pow_recursion(n, 2));
+	return (_prime_check(1, n));
 }
