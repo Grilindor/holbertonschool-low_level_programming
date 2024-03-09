@@ -10,15 +10,14 @@
 
 int main(int argc, char *argv[])
 {
-	int i, total = 0;
+	int total = 0;
 
 	if (argc != 3)
 	{
 		printf("ERROR\n");
 		return (1);
 	}
-	else
-		total = atoi(argv[1]) * atoi(argv[2]);
+	total = atoi(argv[1]) * atoi(argv[2]);
 	printf("%d\n", total);
 	return (0);
 }
