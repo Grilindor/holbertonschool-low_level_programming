@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 /**
  *main - a program that prints multiplies two numbers
  *@argc: is de commande line
@@ -10,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int total = 0;
+	int total;
 
 	if (argc != 3)
 	{
