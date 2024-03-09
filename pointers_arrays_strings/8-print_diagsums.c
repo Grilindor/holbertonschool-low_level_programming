@@ -3,10 +3,11 @@
 #include <string.h>
 #include "2-strchr.c"
 /**
- *_strspn - main fontion it's like printf in revers
- *@s: it's first array
- *@accept: is what is accepted and be compt
- *Return: return the total of byte
+ *print_diagsums - main fontion that prints the sum of the two diagonals of
+ *a square matrix of integers
+ *@a: it's first array
+ *@size: is what is accepted and be compt
+ *Return: nothing void
  */
 
 void print_diagsums(int *a, int size)
@@ -15,9 +16,12 @@ void print_diagsums(int *a, int size)
 	int diagonal_one = 0;
 	int diagonal_two = 0;
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < (size * size); i++)
 	{
-		diagonal_one += a[i][i];
-		diagonal_two += a[i][size - i - 1];
+		if (i % (size + 1) == 0)
+			diagonal_one += *(a + i);
+		if (i % (size - 1) == 0 && i != 0 && i < size * size - 1)
+			diagonal_two += *(a + i);
 	}
+	printf("%d, %d\n", diagonal_one, diagonal_two);
 }
