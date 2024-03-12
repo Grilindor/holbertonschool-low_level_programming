@@ -6,7 +6,7 @@
  * array_range - main function that creates an array of integers
  * @min: value
  * @max: value
- *
+ *the malloc here adjuste the size calculation
  * Return: return the created array.
  */
 
@@ -19,9 +19,6 @@ int *array_range(int min, int max)
 		return (NULL);
 
 	tableau = malloc(sizeof(int) * (max - min + 1));
-/**
- *Adjusted the size calculation
- **/
 
 	for (i = 0; min <= max; i++)
 	{
