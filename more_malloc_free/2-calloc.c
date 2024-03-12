@@ -17,10 +17,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (size == 0 || nmemb == 0)
 		return (NULL);
 
-	new_array = malloc(sizeof(int) * size);
+	new_array = malloc(sizeof(int) * nmemb);
 
-	for (i = 0; i < size; i++)
-		new_array[i] = nmemb;
+	for (i = 0; i < nmemb; i++)
+		new_array[i] = 0;
 	if (new_array == 0)
 		return (NULL);
 	return (new_array);
