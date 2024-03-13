@@ -1,8 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include "_putchar.c"
 /**
  * string_nconcat - main function that concatenates two strings
  * @s1: the 1 string
