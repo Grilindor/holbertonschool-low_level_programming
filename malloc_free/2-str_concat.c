@@ -1,11 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
-#include <string.h>
 /**
- * _strdup - copy a string with new allocate memory
- * @str: pointer to a string
- * Return: Null if str = Null else return pointer to str
+ * str_concat - copy a string with new allocate memory
+ * @s1: pointer to the 1st string
+ * @s2: pointer to the 2d string
+ * Return: Null if new_str = Null else return pointer to new_str
  */
 
 char *str_concat(char *s1, char *s2)
@@ -13,9 +13,11 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i, j, l, k, t;
 	char *new_str;
 
-	l = strlen(s1);
-	k = strlen(s2);
-	t = l + k + 2;
+	for (l = 0; s1[l] != '\0'; l++)
+		;
+	for (k = 0; s2[k] != '\0'; k++)
+		;
+	t = l + k + 1;
 
 	new_str = malloc(t);
 
