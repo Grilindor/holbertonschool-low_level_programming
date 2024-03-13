@@ -1,8 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
-#include <string.h>
 /**
  * _strdup - main function that returns a pointer to a newly allocated
  * space in memory, which contains a copy of the string given
@@ -18,7 +16,8 @@ char *_strdup(char *str)
 	unsigned int i, l;
 	char *new_str;
 
-	l = strlen(str);
+	for (l = 0; str[l] != '\0'; l++)
+		;
 
 	new_str = malloc(l + 1);
 
