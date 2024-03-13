@@ -27,18 +27,9 @@ char *str_concat(char *s1, char *s2)
 	if (new_str == NULL)
 		return (NULL);
 
-	for (i = 0; i < l + 1; i++)
+	for (i = 0; i < l; i++)
 	{
 		new_str[i] = s1[i];
-		if (s1[i] == 32)
-		{
-			i++;
-			break;
-		}
-		else if (s1[i] == '\0')
-		{
-			new_str[i] = 32;
-		}
 	}
 	for (j = 0; j < k + 1; j++)
 	{
