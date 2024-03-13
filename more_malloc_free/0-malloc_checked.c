@@ -3,7 +3,7 @@
 #include <limits.h>
 #include <stdlib.h>
 /**
- * malloc_checked - allocate memorory a grid of integer
+ * malloc_checked - allocate memorory used malloc
  * @b: the longueur to chek?
  *
  *
@@ -12,12 +12,9 @@
 
 void *malloc_checked(unsigned int b)
 {
-	unsigned int l;
 	int *i;
 
-	l = sizeof(b);
-
-	i = malloc(l);
+	i = malloc(b);
 	if (i == NULL)
 	{
 		free(i);
