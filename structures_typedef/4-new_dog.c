@@ -39,14 +39,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int i, j;
 	dog_t *xdog;
 
-	xdog = malloc(sizeof(dog_t));
-
 	if (xdog == NULL)
 		return (NULL);
 	if (name == NULL)
 		return (NULL);
 	if (owner == NULL)
 		return (NULL);
+
+	xdog = malloc(sizeof(dog_t));
 	for (i = 0; name[i] != '\0'; i++)
 	{}
 	xdog->name = malloc(i + 1);
