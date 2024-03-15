@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 /**
  * new_dog - main fonction who initialyse the dog data
  *@name: name of the dog
@@ -32,7 +33,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	strcpy(xdog->owner, owner);
 
 	if (xdog->name == NULL || xdog->owner == NULL)
+	{
+		free(xdog->name);
+		free(xdog->owner);
+		free(xdog);
 		return (NULL);
+	}
 	xdog->age = age;
 	return (xdog);
 }
