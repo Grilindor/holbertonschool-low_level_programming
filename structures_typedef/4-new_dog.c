@@ -3,6 +3,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "../pointers_arrays_strings/2-strlen.c"
+
+/**
+ *_strcpy - main fontion it's like printf
+ *@dest: destination
+ *@src:source
+ *
+ *Return: renvoie le dest
+ */
+
+char *_strcpy(char *dest, char *src)
+{
+	int i;
+
+	for (i = 0; i <= _strlen(src); i++)
+	{
+		dest[i] = src[i];
+	}
+	return (dest);
+}
+
+
 /**
  * new_dog - main fonction who initialyse the dog data
  *@name: name of the dog
@@ -10,6 +32,7 @@
  *@owner: name of owner
  *Return: return the structure xdog
 **/
+
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -27,12 +50,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (i = 0; name[i] != '\0'; i++)
 	{}
 	xdog->name = malloc(i + 1);
-	strcpy(xdog->name, name);
+	_strcpy(xdog->name, name);
 
 	for (j = 0; owner[j]; j++)
 	{}
 	xdog->owner  = malloc(j + 1);
-	strcpy(xdog->owner, owner);
+	_strcpy(xdog->owner, owner);
 
 	if (xdog->name == NULL || xdog->owner == NULL)
 	{
