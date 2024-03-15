@@ -25,11 +25,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (owner == NULL)
 		return (NULL);
 	for (i = 0; name[i] != '\0'; i++)
-	xdog->name = malloc(i);
+	{}
+	xdog->name = malloc(i + 1);
 	strcpy(xdog->name, name);
 
 	for (j = 0; owner[j]; j++)
-	xdog->owner  = malloc(j);
+	{}
+	xdog->owner  = malloc(j + 1);
 	strcpy(xdog->owner, owner);
 
 	if (xdog->name == NULL || xdog->owner == NULL)
