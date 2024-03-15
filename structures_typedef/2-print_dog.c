@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
+#include <math.h>
 /**
  * print_dog - main fonction who initialyse the dog data
  *@d: is the value in struct dog
+ * Return: void
 **/
 
 void print_dog(struct dog *d)
