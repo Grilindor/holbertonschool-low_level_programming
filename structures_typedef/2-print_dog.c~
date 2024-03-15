@@ -1,0 +1,10 @@
+#include "dog.h"
+/**
+ * init_dog - main fonction who initialyse the dog data
+ *@d: is the value in struct dog
+ *@name: name of the dog
+ * @age: it's age what did you expect
+ *@owner: name of owner
+ *Define a new type struct dog with the following elements
+**/
+
