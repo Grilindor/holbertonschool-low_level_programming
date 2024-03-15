@@ -50,25 +50,28 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (i = 0; name[i] != '\0'; i++)
 	{}
 	xdog->name = malloc(i + 1);
-	_strcpy(xdog->name, name);
 
 	if (xdog->name == NULL)
-	{
-		free(xdog);
-		return (NULL);
-	}
+        {
+                free(xdog);
+                return (NULL);
+        }
+
+	_strcpy(xdog->name, name);
 
 	for (j = 0; owner[j]; j++)
 	{}
 	xdog->owner  = malloc(j + 1);
-	_strcpy(xdog->owner, owner);
 
 	if (xdog->owner == NULL)
-	{
-		free(xdog->name);
-		free(xdog);
-		return (NULL);
-	}
+        {
+                free(xdog->name);
+                free(xdog);
+                return (NULL);
+        }
+
+	_strcpy(xdog->owner, owner);
+
 	xdog->age = age;
 	return (xdog);
 }
