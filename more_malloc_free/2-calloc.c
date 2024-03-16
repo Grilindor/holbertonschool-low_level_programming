@@ -19,15 +19,14 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0)
 		return (NULL);
 
-	new_array = malloc(sizeof(int) * nmemb);
+	new_array = malloc((size * nmemb));
 
 	if (new_array == NULL)
 	{
-		free(new_array);
                 return (NULL);
 	}
 
-	for (i = 0; i < nmemb; i++)
+	for (i = 0; i < (size * nmemb); i++)
 		new_array[i] = 0;
 
 	return (new_array);
