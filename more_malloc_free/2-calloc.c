@@ -21,7 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	new_array = malloc(sizeof(int) * nmemb);
 
-	if (new_array == 0)
+	if (new_array == NULL)
 	{
 		free(new_array);
                 return (NULL);
