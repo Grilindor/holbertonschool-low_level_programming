@@ -3,12 +3,10 @@
 #include <stdarg.h>
 
 /**
- * array_iterator - a function that executes a function given
- * as a parameter on each element of an array
- * @array: the array
- * @size: is the size of the array
- * @action: executes a function
- * Return: void.
+ * print_numbers - that prints numbers, followed by a new line
+ * @separator: is the string to be printed between numbers
+ * @n: the number of integers passed to the function
+ * Return: return the va_list prlist
  **/
 
 void print_numbers(const char *separator, const unsigned int n, ...)
