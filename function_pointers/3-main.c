@@ -3,11 +3,9 @@
 #include "3-calc.h"
 
 /**
- * array_iterator - a function that executes a function given
- * as a parameter on each element of an array
- * @array: the array
- * @size: is the size of the array
- * @action: executes a function
+ * main - a function that performs simple operations
+ * @argc: the value
+ * @argv: the value
  * Return: void.
  **/
 
@@ -29,6 +27,6 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	printf("%d\n", f(atoi(argv[1]), atoi(arg[3])));
+	printf("%d\n", f(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
