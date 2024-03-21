@@ -3,12 +3,9 @@
 #include <stdarg.h>
 
 /**
- * array_iterator - a function that executes a function given
- * as a parameter on each element of an array
- * @array: the array
- * @size: is the size of the array
- * @action: executes a function
- * Return: void.
+ * sum_them_all - a function that returns the sum of all its parameters
+ * @n: is all de number we will sum
+ * Return: return the total of all that
  **/
 
 int sum_them_all(const unsigned int n, ...)
