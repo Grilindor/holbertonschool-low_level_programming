@@ -39,7 +39,15 @@ void printfloat(va_list chec_type)
 **/
 void print_point_char(va_list chec_type)
 {
-	printf("%s", va_arg(chec_type, char*))
+	char *pointer;
+
+	pointer = va_arg(chec_type, char*);
+	if (pointer == NULL)
+	{
+		printf("(nil)");
+		return;
+	}
+	printf("%s", pointer);
 }
 
 /**
