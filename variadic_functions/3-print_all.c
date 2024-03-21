@@ -39,15 +39,7 @@ void printfloat(va_list chec_type)
 **/
 void print_point_char(va_list chec_type)
 {
-	char *str;
-
-	str = va_arg(chec_type, char*)
-	if (str == NULL)
-	{
-		printf("(nil)");
-		return;
-	}
-	printf("%s", str);
+	printf("%s", va_arg(chec_type, char*))
 }
 
 /**
@@ -63,7 +55,7 @@ void print_all(const char * const format, ...)
 		{"i", printint},
 		{"f", printfloat},
 		{"s", print_point_char},
-		{NULL, NULL},
+		{NULL, NULL}
 	};
 
 	va_list chec_type;
@@ -74,6 +66,7 @@ void print_all(const char * const format, ...)
 
 	while (format[i] && format)
 	{
+		j = 0;
 		while (j < 4)
 		{
 			if (format[i] == check[j].the_format_in_char[0])
@@ -84,7 +77,6 @@ void print_all(const char * const format, ...)
 			}
 			++j;
 		}
-		j = 0;
 		++i;
 	}
 	printf("\n");
