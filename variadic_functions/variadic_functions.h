@@ -1,5 +1,12 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
+
+typedef struct print_type
+{
+	char *the_format_in_char;
+	void (*Funcp)();
+} array;
+
 int sum_them_all(const unsigned int n, ...);
 int _putchar(char c);
 void print_numbers(const char *separator, const unsigned int n, ...);
