@@ -85,6 +85,7 @@ void print_all(const char * const format, ...)
 			}
 			++j;
 		}
+		j = 0;
 		++i;
 	}
 	printf("\n");
