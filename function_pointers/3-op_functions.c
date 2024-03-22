@@ -1,7 +1,7 @@
 #include <math.h>
 #include "3-calc.h"
 #include <stdio.h>
-
+#include <stdlib.h>
 
 /**
  * op_add - sum of a and b
