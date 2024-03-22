@@ -8,9 +8,9 @@
  */
 typedef struct op
 {
-	char *op;
-	int (*f)(int a, int b);
-} op_t;
+	char *op;/*connected to 3-op_functions.c*/
+	int (*f)(int a, int b); /*connected to 3- main.c*/
+} op_t;/*connected to 3-get_op_func.c*/
 int op_add(int a, int b);
 int op_sub(int a, int b);
 int op_mul(int a, int b);
