@@ -11,7 +11,6 @@
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	int i;
 	/*alloing memori for new node*/
 	dlistint_t *last_node = malloc(sizeof(dlistint_t));
 	dlistint_t *last = *head;
@@ -23,14 +22,12 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	/*Duplicates string*/
 	/*last_node->n = strdup(str);*/
 
-	for (i = 0; i < n; i++)
-		;
-	last_node->n = i;/*length of string, str*/
+	last_node->n = n;/*replace value*/
 
 	/*the new tail point to the endof the list*/
 	last_node->next = NULL;
 
-	/*if the list is empty, */
+	/*if the list is empty, return the last node*/
 	if (*head == NULL)
 	{
 		*head = last_node;
