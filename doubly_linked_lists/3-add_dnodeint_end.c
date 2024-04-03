@@ -16,7 +16,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	dlistint_t *last = *head;
 
 	/*succes of malloc?*/
-	if (last_node == NULL)
+	if (head == NULL || last_node == NULL)
 		return (NULL);
 
 	/*Duplicates string*/
@@ -40,5 +40,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		last = last->next;
 	/*remmember it need to point at the last node after*/
 	last->next = last_node;
+	last_node->prev = last;
 	return (last);
 }
