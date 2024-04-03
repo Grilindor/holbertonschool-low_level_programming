@@ -10,21 +10,25 @@
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	int i;
+	/*int i;*/
 	dlistint_t *new_node;
 	/*alloing memori for new node*/
 	new_node = (dlistint_t *)malloc(sizeof(dlistint_t));
 
 	/*succes of malloc?*/
-	if (new_node == NULL)
+	if (new_node == NULL || head == NULL)
 		return (NULL);
 
-	for (i = 0; i < n; i++)
-		;
-	new_node->n = i;/*length of integer, n*/
+	/*for (i = 0; i < n; i++)*/
+	new_node->n = n;/*length of integer, n*/
 
-	/*the new head point to the old head*/
-	new_node->next = (*head);
+	new_node->next = *head;
+	/*Set the previous pointer of the new node to NULL*/
+	new_node->prev = NULL;
+
+	/*while it's not null*/
+	if (*head != NULL)
+		(*head)->prev = new_node;
 
 	/*repeat the processus*/
 	(*head) = new_node;
