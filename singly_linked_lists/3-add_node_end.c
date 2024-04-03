@@ -14,6 +14,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	/*alloing memori for new node*/
 	list_t *last_node = malloc(sizeof(list_t));
 	list_t *last = *head;
+	int i;
 
 	/*succes of malloc?*/
 	if (last_node == NULL)
