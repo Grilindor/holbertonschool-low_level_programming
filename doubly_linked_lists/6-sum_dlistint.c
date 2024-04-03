@@ -3,28 +3,26 @@
 #include <string.h>
 
 /**
-*
-*
+* sum_dlistint - function that returns the sum of all
+*  the data (n) of a linked list
+* @head:the list
+* Return: sum
 **/
 
 int sum_dlistint(dlistint_t *head)
 {
-	dlistint_t *find_node;
-	unsigned int i = 0;
-
-	find_node = (struct dlistint_s *) malloc(sizeof(struct dlistint_s));
-
+	dlistint_t *current  = head;
+	int sum = 0;
+/*if head is empty*/
 	if (head == NULL)
 		return (0);
-
-	for (i = 0; i != NULL; i++)
+/*move forward and add value*/
+	while (current != NULL)
 	{
-		if (head != NULL)
-			head = head->next;
-		else
-			return (0);
+		sum += current->n;
+		current = current->next;
 	}
-	find_node->n = head->n;
 
-	return (find_node);
+/*return the total*/
+	return (sum);
 }
