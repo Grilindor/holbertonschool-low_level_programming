@@ -30,10 +30,11 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	/*the new tail point to the endof the list*/
 	last_node->next = NULL;
 
-	/*if the list is empty*/
+	/*if the list is empty, */
 	if (*head == NULL)
 	{
 		*head = last_node;
+		last_node->prev = NULL;
 		return (last_node);
 	}
 
