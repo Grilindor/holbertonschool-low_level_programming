@@ -22,7 +22,9 @@ list_t *add_node_end(list_t **head, const char *str)
 	/*Duplicates string*/
 	last_node->str = strdup(str);
 
-	last_node->len = strlen(str);/*length of string, str*/
+	for (i = 0; str[i] != '\0'; i++)
+		;
+	last_node->len = i;/*length of string, str*/
 
 	/*the new tail point to the endof the list*/
 	last_node->next = NULL;
